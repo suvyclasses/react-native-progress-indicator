@@ -18,7 +18,8 @@
     "tsc": "tsc",
     "ci": "yarn lint && yarn tsc",
     "build": "bob build",
-    "prepare": "yarn build && husky install"
+    "prepare": "yarn build && husky install",
+    "run-pack": "yarn build && yarn pack && mv react-native-circular-progress-indicator-v4.4.2.tgz output/"
   },
   "repository": {
     "name": "GitHub",
