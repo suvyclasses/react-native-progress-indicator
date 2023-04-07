@@ -1,12 +1,12 @@
-import React, { forwardRef, useImperativeHandle, useMemo } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { forwardRef, useImperativeHandle, useMemo } from "react";
+import { StyleSheet, View } from "react-native";
 
-import ProgressCircle from '../components/progressCircle';
-import useAnimatedValue from '../hooks/useAnimatedValue';
-import COLORS from '../utils/colors';
-import type { CircularProgressBaseProps, ProgressRef } from '../types';
+import ProgressCircle from "../components/progressCircle";
+import useAnimatedValue from "../hooks/useAnimatedValue";
+import COLORS from "../utils/colors";
+import type { CircularProgressBaseProps, ProgressRef } from "../types";
 
-import styles from './styles';
+import styles from "./styles";
 
 const CircularProgressBase = forwardRef<ProgressRef, CircularProgressBaseProps>(
   (props, ref) => {
@@ -18,7 +18,7 @@ const CircularProgressBase = forwardRef<ProgressRef, CircularProgressBaseProps>(
       duration = 500,
       delay = 0,
       maxValue = 100,
-      strokeLinecap = 'round',
+      strokeLinecap = "round",
       onAnimationComplete = () => null,
       activeStrokeColor = COLORS.GREEN,
       activeStrokeSecondaryColor = null,
@@ -84,7 +84,8 @@ const CircularProgressBase = forwardRef<ProgressRef, CircularProgressBaseProps>(
           style={[
             StyleSheet.absoluteFillObject,
             styles(styleProps).valueContainer,
-          ]}>
+          ]}
+        >
           {children}
         </View>
       </View>

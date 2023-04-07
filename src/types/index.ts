@@ -354,7 +354,7 @@ type ProgressRef = {
    */
   reAnimate: () => void;
 
-  progressValue: Animated.SharedValue<string>;
+  progressValue?: Animated.SharedValue<string>;
 };
 
 export type {
