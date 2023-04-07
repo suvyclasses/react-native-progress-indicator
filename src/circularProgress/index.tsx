@@ -83,6 +83,7 @@ const CircularProgress = forwardRef<ProgressRef, CircularProgressProps>(
       play,
       pause,
       reAnimate,
+      progressValue
     }));
 
     const styleProps = useMemo(

@@ -353,6 +353,8 @@ type ProgressRef = {
    * Use this to replay the animation.
    */
   reAnimate: () => void;
+
+  progressValue: Animated.SharedValue<string>;
 };
 
 export type {
